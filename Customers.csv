@@ -1,0 +1,108 @@
+Customer_ID,Customer_Name,Segment,City,State,Region
+CUS0001,Yetunde Salami,Wholesaler,Lagos Island,Lagos,Lagos
+CUS0002,Blessing Eze,Wholesaler,Lekki,Lagos,Lagos
+CUS0003,Hadiza Eze,Distributor,Lagos Island,Lagos,Lagos
+CUS0004,Kelechi Lawal,Retailer,Lekki,Lagos,Lagos
+CUS0005,Ngozi Musa,Supermarket,Ikeja,Lagos,Lagos
+CUS0006,Chukwudi Amadi,Pharmacy,Lagos Island,Lagos,Lagos
+CUS0007,Afolabi Nwosu,Retailer,Alimosho,Lagos,Lagos
+CUS0008,Hauwa Lawal,Supermarket,Surulere,Lagos,Lagos
+CUS0009,Josephine Ayodele,Retailer,Alimosho,Lagos,Lagos
+CUS0010,Blessing Obi,Retailer,Lagos Island,Lagos,Lagos
+CUS0011,Garba Okafor,Distributor,Lekki,Lagos,Lagos
+CUS0012,Kelechi Bello,Pharmacy,Ikeja,Lagos,Lagos
+CUS0013,Ike Gana,Retailer,Lekki,Lagos,Lagos
+CUS0014,Afolabi Udo,Distributor,Surulere,Lagos,Lagos
+CUS0015,Gbenga Fashola,Retailer,Ikeja,Lagos,Lagos
+CUS0015,Gbenga Fashola,Retailer,Ikeja,Lagos,Lagos
+CUS0016,Damilola Ogundele,Supermarket,Alimosho,Lagos,Lagos
+CUS0017,Damilola Nnamdi,Pharmacy,Surulere,Lagos,Lagos
+CUS0018,Obinna Musa,Retailer,Ikeja,Lagos,Lagos
+CUS0019,Taiwo Udo,Wholesaler,Lagos Island,Lagos,Lagos
+CUS0020,Hadiza Okonkwo,Retailer,Ikeja,Lagos,Lagos
+CUS0021,Blessing Chukwu,Wholesaler,Gwarinpa,Abuja,Abuja
+CUS0022,Obinna Adeleke,Distributor,Gwarinpa,Abuja,Abuja
+CUS0023,Taiwo Fashola,,Gwarinpa,Abuja,Abuja
+CUS0024,Blessing Adesanya,Pharmacy,Garki,Abuja,Abuja
+CUS0025,Efosa Fashola,Wholesaler,Maitama,Abuja,Abuja
+CUS0026,Latifat Chukwu,Distributor,Wuse,Abuja,Abuja
+CUS0027,Adebayo Adesanya,Pharmacy,Maitama,Abuja,Abuja
+CUS0028,Efosa Nwosu,Wholesaler,Gwarinpa,Abuja,Abuja
+CUS0029,Hadiza Ayodele,Pharmacy,Maitama,Abuja,Abuja
+CUS0030,Zainab Salami,Supermarket,Wuse,Abuja,Abuja
+CUS0031,Efosa Nwosu,Pharmacy,Gwarinpa,Abuja,lagos
+CUS0032,Josephine Adeyemi,Supermarket,Gwarinpa,Abuja,Abuja
+CUS0033,Sade Adeyemi,Supermarket,Garki,Abuja,Abuja
+CUS0034,Ike Abdullahi,Retailer,Maitama,Abuja,Abuja
+CUS0035,Chioma Eze,Wholesaler,Gwarinpa,Abuja,Abuja
+CUS0036,Emeka Adesanya,Wholesaler,Asokoro,Abuja,Abuja
+CUS0037,Efosa Ogundele,Retailer,Wuse,Abuja,Abuja
+CUS0038,Blessing Udo,Retailer,Gwarinpa,Abuja,Abuja
+CUS0039,Kelechi Yakubu,Distributor,Gwarinpa,Abuja,Abuja
+CUS0040,Ibrahim Amadi,Retailer,Gwarinpa,Abuja,Abuja
+CUS0041,Chukwudi Danjuma,Supermarket,Asokoro,Abuja,Abuja
+CUS0042,Rasheed Olawale,Distributor,Gwarinpa,Abuja,Abuja
+CUS0043,Fatima Eze,Wholesaler,Wuse,Abuja,Abuja
+CUS0044,MUSA ADEYEMI,Pharmacy,Gwarinpa,Abuja,Abuja
+CUS0045,Yetunde Eze,Wholesaler,GRA Phase 1,Port Harcourt,Port Harcourt
+CUS0046,Chukwudi Ayodele,Retailer,GRA Phase 1,Port Harcourt,Port Harcourt
+CUS0047,Emeka Olawale,Supermarket,GRA Phase 1,Port Harcourt,Port Harcourt
+CUS0048,Emeka Yakubu,Supermarket,Trans-Amadi,Port Harcourt,Port Harcourt
+CUS0049,Blessing Udo,Pharmacy,Trans-Amadi,Port Harcourt,Port Harcourt
+CUS0050,Gbenga Adesanya,Pharmacy,Rumuigbo,Port Harcourt,Port Harcourt
+CUS0051,Sade Eze,Distributor,Diobu,Port Harcourt,Port Harcourt
+CUS0052,Ibrahim Okonkwo,Distributor,GRA Phase 1,Port Harcourt,Port Harcourt
+CUS0053,Ngozi Chukwu,Distributor,Diobu,Port Harcourt,Port Harcourt
+CUS0054,Hadiza Adesanya,Wholesaler,GRA Phase 1,Port Harcourt,Port Harcourt
+CUS0055,Chioma Adeleke,Wholesaler,Rumuola,Port Harcourt,Port Harcourt
+CUS0056,Jumoke Salami,Pharmacy,Trans-Amadi,Port Harcourt,Port Harcourt
+CUS0057,Rasheed Abubakar,Retailer,Diobu,Port Harcourt,Port Harcourt
+CUS0058,Kelechi Lawal,Wholesaler,Trans-Amadi,Port Harcourt,Port Harcourt
+CUS0059,Rasheed Ogundimu,Wholesaler,Rumuigbo,Port Harcourt,Port Harcourt
+CUS0060,Chioma Ayodele,Wholesaler,Rumuigbo,Port Harcourt,Port Harcourt
+CUS0061,Emeka Amadi,Retailer,Trans-Amadi,Port Harcourt,Port Harcourt
+CUS0062,Precious Udo,Retailer,Diobu,Port Harcourt,Port Harcourt
+CUS0063,Hadiza Adeleke,Retailer,GRA Phase 1,Port Harcourt,Port Harcourt
+CUS0064,Adebayo Adeleke,Distributor,Gwale,Kano,Kano
+CUS0065,Latifat Chukwu,Distributor,Dala,Kano,Kano
+CUS0066,Gbenga Salami,Retailer,Gwale,Kano,Kano
+CUS0067,Chioma Nnamdi,Wholesaler,Dala,Kano,Kano
+CUS0068,Damilola Obi,Wholesaler,Nassarawa,Kano,Kano
+CUS0069,Yetunde Udo,Pharmacy,Dala,Kano,Kano
+CUS0070,Hauwa Okafor,Wholesaler,Dala,Kano,Kano
+CUS0071,Hadiza Nwosu,Pharmacy,Nassarawa,Kano,Kano
+CUS0072,Emeka Okeke,Distributor,Fagge,Kano,Kano
+CUS0073,Fatima Olawale,Retailer,Dala,Kano,Kano
+CUS0074,Yetunde Suleiman,Pharmacy,Nassarawa,Kano,Kano
+CUS0075,Emeka Chukwu,Pharmacy,Dala,Kano,Kano
+CUS0076,Taiwo Obi,Retailer,Gwale,Kano,Kano
+CUS0077,Blessing Gana,Retailer,Gwale,Kano,Kano
+CUS0078,Kelechi Adeleke,Supermarket,Fagge,Kano,Kano
+CUS0079,Rasheed Obi,Wholesaler,Nassarawa,Kano,Kano
+CUS0080,Rasheed Suleiman,Wholesaler,Dala,Kano,Kano
+CUS0081,Emeka Ogundele,Pharmacy,Fagge,Kano,Kano
+CUS0082,Kelechi Abubakar,Wholesaler,Gwale,Kano,Kano
+CUS0083,Ike Eze,Supermarket,Gwale,Kano,Kano
+CUS0084,Hauwa Lawal,Supermarket,Dala,Kano,Kano
+CUS0085,Folake Ayodele,Wholesaler,Mokola,Ibadan,Ibadan
+CUS0086,Blessing Abdullahi,Supermarket,Mokola,Ibadan,Ibadan
+CUS0087,Josephine Okeke,Retailer,Bodija,Ibadan,Ibadan
+CUS0088,Kelechi Okonkwo,Pharmacy,Bodija,Ibadan,Ibadan
+CUS0089,Gbenga Fashola,Pharmacy,Dugbe,Ibadan,Ibadan
+CUS0090,Ibrahim Gana,Retailer,Dugbe,Ibadan,Ibadan
+CUS0091,Blessing Ayodele,Pharmacy,Dugbe,Ibadan,Ibadan
+CUS0092,Sade Fashola,Wholesaler,Bodija,Ibadan,Ibadan
+CUS0093,Afolabi Chukwu,Wholesaler,Dugbe,Ibadan,Ibadan
+CUS0094,Adebayo Obi,Supermarket,Ring Road,Ibadan,Ibadan
+CUS0095,Hauwa Adesanya,Pharmacy,Agodi,Ibadan,Ibadan
+CUS0096,Chukwudi Chukwu,Wholesaler,Mokola,Ibadan,Ibadan
+CUS0097,Fatima Bello,Pharmacy,Ring Road,Ibadan,Ibadan
+CUS0098,Chioma Abdullahi,Pharmacy,Dugbe,Ibadan,Ibadan
+CUS0099,Uche Abubakar,Retailer,Agodi,Ibadan,Ibadan
+CUS0100,Chioma Danjuma,Wholesaler,Dugbe,Ibadan,Ibadan
+CUS0101,Ike Musa,Retailer,Ring Road,Ibadan,Ibadan
+CUS0102,Blessing Okonkwo,Pharmacy,Dugbe,Ibadan,Ibadan
+CUS0103,Ike Igwe,Pharmacy,Agodi,Ibadan,Ibadan
+CUS0104,Damilola Abubakar,Retailer,Ring Road,Ibadan,Ibadan
+CUS0105,Folake Ogundimu,Distributor,Ring Road,Ibadan,Ibadan
+CUS0106,Adebayo Nwosu,Distributor,Dugbe,Ibadan,Ibadan

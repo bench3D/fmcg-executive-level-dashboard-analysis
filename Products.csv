@@ -1,0 +1,33 @@
+Product_ID,Product_Name,Category,Sub_Category,Unit_Price_NGN,Cost_Price_NGN
+PRD0001,Lucozade Boost 350ml,Beverages,Energy Drinks,650,420
+PRD0002,Power Horse 250ml,Beverages,Energy Drinks,480,270
+PRD0003,  Power Horse 250ml  ,Beverages,Energy Drinks,520,310
+PRD0004,Bullet Energy 250ml,Beverages,Energy Drinks,350,200
+PRD0005,Chivita 100% Orange 1L,Beverages,,1100,730
+PRD0006,Five Alive Citrus 1L,Beverages,Juice & Nectar,950,620
+PRD0007,Capri-Sun 200ml,Beverages,Juice & Nectar,280,190
+PRD0008,Hollandia Yoghurt Drink 500ml,Beverages,Juice & Nectar,780,440
+PRD0009,Maltina 330ml,beverages,Malt Drinks,420,260
+PRD0010,Malta Guinness 330ml,Beverages,Malt Drinks,430,240
+PRD0011,Grand Malt 330ml,Beverages,Malt Drinks,380,220
+PRD0012,Ribena Blackcurrant 300ml,Health & Wellness,,580,360
+PRD0013,Ribena Orange 300ml,Health & Wellness,Glucose Drinks,560,310
+PRD0014,Lucozade Original 330ml,Health & Wellness,Glucose Drinks,620,360
+PRD0015,Vitamin C 500mg Tablets,Health & Wellness,Vitamins,1200,780
+PRD0016,Multivitamin Syrup 200ml,Health & Wellness,Vitamins,1850,1170
+PRD0017,Zinc & Selenium 30 Tabs,Health & Wellness,Vitamins,900,520
+PRD0018,Vitamilk Soya Milk 250ml,Food & Condiments,Dairy,490,310
+PRD0019,Hollandia Evap Milk 410g,Food & Condiments,Dairy,820,550
+PRD0020,Peak Milk Tin 400g,Food & Condiments,Dairy,1650,910
+PRD0021,Maggi Chicken 100g,Food & Condiments,Seasonings,350,230
+PRD0022,Knorr Beef Cubes 24pcs,Food & Condiments,Seasonings,750,490
+PRD0023,Royco Pepper Soup 20g,Food & Condiments,Seasonings,220,130
+PRD0024,Indomie Instant Noodles 70g,Food & Condiments,Snacks,180,100
+PRD0025,Cabin Biscuits 200g,Food & Condiments,Snacks,420,290
+PRD0026,Digestive Biscuits 200g,Food & Condiments,Snacks,550,330
+PRD0027,Vaseline Intensive Care 400ml,Personal Care,Skincare,2200,1240
+PRD0028,Dove Body Lotion 400ml,Personal Care,Skincare,2800,1580
+PRD0029,Nivea Body Lotion 400ml,Personal Care,Skincare,2600,1760
+PRD0030,Dark & Lovely Relaxer Kit,Personal Care,Hair Care,3500,2240
+PRD0031,Cantu Leave-In Conditioner,Personal Care,Hair Care,4200,2820
+PRD0032,Organic Root Stimulator,Personal Care,Hair Care,3800,2510
