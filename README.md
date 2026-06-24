@@ -429,6 +429,7 @@ The report contains exactly five pages. The fifth covers EDA and AI-driven analy
 
 ### **Page 3 — Product Performance**
 ![product-performance](dashboards/product-performance.png)
+
     ●     Treemap: Revenue contribution by Product Category
 
     ●     Table: Product-level detail — Revenue, Cost, Gross Profit, GP%, Units Sold — with conditional formatting on GP%
