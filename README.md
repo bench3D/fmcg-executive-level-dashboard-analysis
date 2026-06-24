@@ -383,13 +383,13 @@ The report contains exactly five pages. The fifth covers EDA and AI-driven analy
     ● 	Apply report-level, page-level, and visual-level filters appropriately
 
 **<span style="text-decoration:underline;">Key Findings:</span>**
-1. Total revenue across the full dataset stands at N214.37M, generated from approximately 4,000 orders.
-2. Overall Gross Profit % is 0.35 (35%), indicating a healthy blended margin across all product categories and regions.
-3. YoY Growth % is 0.47 (47%), showing strong year-over-year revenue expansion at the portfolio level.
-4. Target Achievement % is only 0.19 (19%), the most concerning metric on this page; actual revenue is tracking well below assigned targets, despite positive YoY growth, suggesting targets may have been set aggressively or only a small slice of target periods/regions are being met.
+1. `Total revenue` across the full dataset stands at N214.37M, generated from approximately 4,000 orders.
+2. `Overall Gross Profit %` is 0.35 (35%), indicating a healthy blended margin across all product `categories` and `regions`.
+3. `YoY Growth %` is 47%, showing strong year-over-year revenue expansion at the portfolio level.
+4. `Target Achievement %` is only 19%, the most concerning metric on this page. Despite positive YoY growth, `actual revenue` is tracking well below the assigned targets, suggesting that the targets may have been set aggressively or only a small slice of target periods/regions are being met.
 5. **Chivita 100% Orange 1L** is the top revenue-generating product, followed by **Power Horse 250ml and Peak Milk Tin 400g**.
-6. The Total Revenue vs YTD Revenue line chart shows YTD Revenue (blue) oscillating above and below the Total Revenue (orange) trend line, with YTD pulling notably ahead mid-year before converging downward toward December — consistent with cumulative YTD logic compared against a per-period actual.
-7. The map visual confirms five active regions (Abuja, Ibadan, Kano, Lagos, Port Harcourt), each represented as a sales hub on the Nigeria map.
+6. The `Total Revenue` vs `YTD Revenue` line chart shows `YTD Revenue` (blue) oscillating above and below the `Total Revenue` (orange) trend line, with `YTD` pulling notably ahead mid-year before converging downward toward December, consistent with cumulative `YTD` compared against a per-period actual.
+7. The map visual confirms five active regions (Abuja, Ibadan, Kano, Lagos, Port Harcourt), with each represented on the Nigeria map.
 
 **<span style="text-decoration:underline;">Methodology Decisions:</span>**
 1. `Total_Revenue`, `Total_Order`, `Gross_Profit_Pct`, `YoY_Growth_Pct`, and `Target_Achievement_Pct` were each built as standalone DAX measures, so they recalculate correctly under any filter/slicer context applied on this page.
@@ -397,106 +397,63 @@ The report contains exactly five pages. The fifth covers EDA and AI-driven analy
 3. `Region` and `Category` slicers were placed on this page to let the dashboard reviewer interact with KPIs.
 
 **<span style="text-decoration:underline;">Limitations:</span>**
-1. Target_Achievement_Pct of 19% is reported as a single blended figure on this page; the root cause (specific regions, months, or reps driving the shortfall) is not visible here and requires drill-down on later pages.
-2. The Year/Quarter filter pane was unfiltered in the reviewed view, so this summary reflects the full 2022–2024 dataset rather than any single period.
+1. `Target_Achievement_Pct` of 19% is reported as a single blended figure on this page. However, the root cause (specific regions, months, or reps driving the shortfall) is not visible here and requires drill-down on later pages.
+2. The `Year/Quarter` filter pane was unfiltered in the reviewed view, so this summary reflects the full `2022–2024` dataset and not any single period.
 
 ### **Page 2 — Regional & Customer Analysis**
-
-
+![regional-and-customer-analysis](dashboards/regional-and-customer-analysis.png)
     ●     Matrix: Revenue and Gross Profit % by Region and Customer Segment
 
-
-    ●     Scatter plot: Revenue vs Total Orders per Customer (bubble size = Gross Profit %) — EDA skill from Session 16
-
+    ●     Scatter plot: Revenue vs Total Orders per Customer (bubble size = Gross Profit %)
 
     ●     Decomposition Tree: Revenue broken down by Region > Category > Product — Session 17
 
-
     ●     Clustered bar chart: Revenue vs Target by Region
-
 
     ● 	Region Revenue Share % card using the ALL-based measure
 
- 
-
 **<span style="text-decoration:underline;">Key Findings:</span>**
-
-
-
-1. Lagos (N44.67M) and Abuja (N44.10M) are the top two regions by revenue, closely followed by Ibadan (N44.19M) and Kano (N43.68M); the four leading regions are tightly clustered within roughly N1M of each other, indicating a fairly even regional spread rather than one dominant hub.
-2. Within Lagos and Kano, the Retailer and Wholesaler channels consistently contribute the largest revenue share among customer segments, while Pharmacy tends to post the lowest Gross_Profit_Pct (0.33–0.34) of the listed channels.
-3. The Region_Revenue_Share_Pct card reads 1.00 in the reviewed view, which is expected only when no single-region filter is applied (i.e., a region's share of itself, or the page is unfiltered showing 100% of the visible total) — see Data Quality note below.
-4. The scatter plot (Total_Revenue vs Total_Order, sized/colored by Customer_Name) shows a clear positive relationship: customers with higher order counts also tend to generate proportionally higher revenue, with one standout customer near N6M revenue and ~100 orders. The decomposition tree confirms Abuja's largest single product contributor is Royco Pepper Soup 20g (N416,504), while Lagos's top product is Vitamilk Soya Milk 250ml (N622,765.50) — useful for region-specific merchandising insight.
-5. Total_Revenue and Target_Achievement_Pct by Region shows Port Harcourt with the longest revenue bar among the five regions in this particular view, while all regions show only a thin Target_Achievement_Pct marker near the axis baseline, reinforcing the Page 1 finding that targets are being substantially under-achieved across the board, not just in one region.
-
+1. `Lagos (N44.67M)` and `Abuja (N44.10M)` are the top two regions by revenue, closely followed by `Ibadan (N44.19M)` and `Kano (N43.68M)`. The four leading regions are tightly clustered within roughly N1M of each other, indicating a fairly even regional spread and not one dominant hub.
+2. Within `Lagos` and `Kano`, the `Retailer` and `Wholesaler` channels consistently contribute the largest revenue share among customer segments, while `Pharmacy` tends to post the lowest `Gross_Profit_Pct (0.33–0.34)` of the listed channels.
+3. The `Region_Revenue_Share_Pct` card reads `1.00` in the reviewed view, which is expected only when no single-region filter is applied.
+4. The scatter plot (`Total_Revenue` vs `Total_Order`, `sized/colored` by `Customer_Name`) shows a clear positive relationship: customers with higher order counts also tend to generate proportionally higher revenue, with one standout customer near N6M revenue and ~100 orders. The decomposition tree confirms `Abuja's` largest single product contributor is **Royco Pepper Soup 20g (N416,504)**, while `Lagos's` top product is **Vitamilk Soya Milk 250ml (N622,765.50)**.
+5. `Total_Revenue` and `Target_Achievement_Pct` by `Region` shows `Port Harcourt` with the longest revenue bar among the five regions in this particular view, while all regions show only a thin `Target_Achievement_Pct` marker near the `axis baseline`, reinforcing the Page 1 finding that targets are being substantially under-achieved across the board, not just in one region.
  
-
 **<span style="text-decoration:underline;">Methodology Decisions:</span>**
-
-
-
-1. Region_Revenue_Share_Pct was built as the ALL-based share-of-total measure: DIVIDE(SUM(Sales[Revenue]), CALCULATE(SUM(Sales[Revenue]), ALL(Sales[Region])), 0) — this strips the Region filter only, preserving any other active filters (e.g., Category) while computing the grand-total denominator.
-2. Customer-level scatter plot uses Customer_Name on the Legend field (not Values) so each customer renders as one bubble, with Total_Revenue/Total_Order on X/Y and an implicit size encoding for scale.
-3. The Region/Product_Name matrix and decomposition tree both pull from the same underlying Sales fact table joined to Region and Product dimension tables, keeping channel-level (Distributor/Wholesaler/Retailer/Supermarket/Pharmacy) subtotals consistent across visuals.
-
- 
+1. `Region_Revenue_Share_Pct` was built as the ALL-based share-of-total measure: `DIVIDE(SUM(Sales[Revenue]), CALCULATE(SUM(Sales[Revenue]), ALL(Sales[Region])), 0)`, this strips the Region filter only, preserving any other active filters (e.g., `Category`) while computing the `grand-total` denominator.
+2. Customer-level scatter plot uses `Customer_Name` on the `Legend field` so that each customer gives one bubble, with `Total_Revenue/Total_Order` on `X/Y-axis`.
+3. The `Region/Product_Name` matrix and decomposition tree both pull from the same underlying Sales fact table joined to `Region` and `Product` dimension tables, keeping channel-level (`Distributor/Wholesaler/Retailer/Supermarket/Pharmacy`) subtotals consistent across visuals.
 
 **<span style="text-decoration:underline;">Limitations:</span>**
-
-
-
-1. Channel-level Gross_Profit_Pct figures (0.33–0.37) are very close to each other, so visual conditional-formatting thresholds may need fine-tuning to make meaningful color differentiation rather than uniform green shading.
-2. This page does not show a trend over time for regional revenue — it is a point-in-time snapshot only; time-based regional comparison would need to be cross-referenced with Page 5's quarterly view.
-
+1. Channel-level `Gross_Profit_Pct` figures `(0.33–0.37)` are very close to each other, so visual conditional-formatting thresholds may need fine-tuning to make meaningful color differentiation rather than uniform green shading.
 
 ### **Page 3 — Product Performance**
-
-
+![product-performance](dashboards/product-performance.png)
     ●     Treemap: Revenue contribution by Product Category
-
 
     ●     Table: Product-level detail — Revenue, Cost, Gross Profit, GP%, Units Sold — with conditional formatting on GP%
 
-
     ●     Line chart: Monthly sales trend per Category (date hierarchy + drill-down from Session 3)
-
 
     ● 	Key Influencers visual: What factors drive high Gross Profit %? — AI visual from Session 17
 
- 
-
 **<span style="text-decoration:underline;">Key Findings:</span>**
-
-
-
-1.  Across the full product table, total Gross_Profit_Pct is 0.35, with Bullet Energy 250ml, Grand Malt 330ml, and Power Horse 250ml each posting the strongest margin at 0.39 (shown in green), while Chivita 100% Orange 1L lags at 0.30 (shown in red) despite being a top revenue earner — a classic 'high volume, lower margin' product profile.
-2. Power Horse 250ml leads in Units_Sold (31,124 units) by a wide margin over the next-closest product (Bullet Energy 250ml at 15,836), making it the clear volume driver even though Chivita generates slightly more total revenue.
-3. The treemap (Total_Revenue by Category) confirms Beverages as the dominant category by revenue and order volume, consistent with the Page 5 EDA finding, followed by Personal Care, Food & Condiments, and Health & Wellness.
-4. The Key Influencers visual identifies Unit_Price_NGN in the N220–N280 range as the strongest driver of a Gross_Profit_Pct decrease (contributing an average drop of 0.08), suggesting products priced in this band are systematically less profitable — likely due to cost structure or discounting at that price point.
-5. The multi-line revenue trend by Category (Year/Quarter/Month) shows Beverages (dark navy) consistently posted as the highest or near-highest revenue line across nearly every month from 2022–2024, with high month-to-month volatility rather than a smooth trend.
-
- 
+1.  Across the full product table, total `Gross_Profit_Pct` is `0.35`, with **Bullet Energy 250ml, Grand Malt 330ml, and Power Horse 250ml** each posting the strongest margin at `0.39` (shown in green), while **Chivita 100% Orange 1L lags** at `0.30` (shown in red) despite being a top revenue earner (a classic 'high volume, lower margin' product profile).
+2. **Power Horse 250ml** leads in `Units_Sold (31,124 units)` by a wide margin over the next-closest product `(Bullet Energy 250ml at 15,836)`, making it the clear volume driver even though **Chivita** generates slightly more total revenue.
+3. The treemap `(Total_Revenue by Category)` confirms `Beverages` as the dominant category by `revenue` and `order volume`, followed by `Personal Care`, `Food & Condiments`, and `Health & Wellness`.
+4. The Key Influencers visual identifies `Unit_Price_NGN` in the `N220–N280` range as the strongest driver of a `Gross_Profit_Pct` decrease (contributing an average drop of 0.08), suggesting products priced in this band are systematically less profitable, which may be due to cost structure or discounting at that price point.
+5. The multi-line revenue trend by `Category (Year/Quarter/Month)` shows `Beverages` (dark navy) consistently posted as the highest or near-highest revenue line across nearly every month from `2022–2024`, with high month-to-month volatility rather than a smooth trend.
 
 **<span style="text-decoration:underline;">Methodology Decisions:</span>**
-
-
-
-1. Gross_Profit_Pct is calculated as a measure — DIVIDE([Gross_Profit], [Revenue], 0) — rather than a per-row column, so the Total row at the bottom of the table correctly recalculates the blended 0.35 figure instead of summing individual row percentages (which would be mathematically invalid).
-2. Conditional formatting on Gross_Profit_Pct uses rule-based thresholds (red/orange/green) rather than a continuous color scale, chosen so reviewers can read a clear pass/fail margin signal per product rather than a gradient that's harder to interpret at a glance.
-3. Key Influencers was run specifically on 'what drives Gross_Profit_Pct to Decrease' to proactively surface margin-risk factors, complementing the 'what drives Total_Order to Increase' analysis used on Page 5.
-
- 
+1. Conditional formatting on `Gross_Profit_Pct` uses rule-based thresholds (red/orange/green) rather than a continuous color scale, so that reviewers can read a clear pass/fail margin signal per product rather than a gradient that's harder to interpret at a glance.
+2. Key Influencers was run specifically on `'what drives Gross_Profit_Pct to Decrease'` to proactively surface margin-risk factors, complementing the `'what drives Total_Order to Increase'` analysis.
 
 **<span style="text-decoration:underline;">Limitations:</span>**
-
-
-
-1. The page does not break out Gross_Profit_Pct by Region or Sales Rep, so it's not possible from this view alone to tell whether the N220–N280 pricing/margin issue is concentrated in specific regions or spread evenly.
-2. Margin analysis here is static (whole-period); no time trend of Gross_Profit_Pct itself is shown, only Total_Revenue trend by category.
+1. The page does not break out `Gross_Profit_Pct` by `Region` or `Sales Rep`, so it's not possible from this view alone to tell whether the `N220–N280` pricing/margin issue is concentrated in specific regions or spread evenly.
+2. Margin analysis here is static (whole-period); no time trend of `Gross_Profit_Pct` itself is shown, only `Total_Revenue` trend by category.
 
 
 ### **Page 4 — Sales Team & Time Intelligence**
-
 
     ●     Bar chart: Revenue per Sales Rep with a constant line showing the average target
 
