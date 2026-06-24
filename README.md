@@ -149,103 +149,72 @@ The first row of the `customers` table was promoted to the header. Likewise, the
 
 The `customers` table, the `customer_ID` column was analysed by using the `Groupby` method to identify the duplicated ids: ![groupby](imgs/cleaning-cus-id.png) ![duplicate-customer-ids](imgs/DUPLICATE-CUS.png) 
 
-**<span style="text-decoration:underline;">Resolution</span>**: Counts greater than 1 show duplication. `CUS0015` was the only duplicate in this column. removed duplicates from the `customer_id` row. The `customers` table, the `segment` column contained &lt; 1% empty string. ![segment-empty-string](imgs/segment-empty.png)
+**<span style="text-decoration:underline;">Resolution</span>**: Counts greater than 1 show duplication. `CUS0015` was the only duplicate in this column. removed duplicates from the `customer_id` row. The `customers` table, the `segment` column contained &lt; 1% empty string. ![segment-empty-string](imgs/segment-empty-string.png)
 
-Corresponding to one empty column-row: ![segment-empty-string](imgs/segment-empty-string.png) 
+Corresponding to one empty column-row: ![segment-empty-string](imgs/segment-empty.png) 
 
 **<span style="text-decoration:underline;">Resolution</span>**: Since the `customer_id` follows an incremental count of the customers, removing the rows will only affect further analysis that will be done on the dataset. Moreover, analysing the Customer Name shows that all customers with the same last name have at least one of the following segments: ‘retailer’, ‘wholesaler’, ‘distributor’, ‘supermarket’, ‘pharmacy’, and the last name ’Fashola’ is missing one of the segments - ‘distributor’ and ‘supermarket’. However, based on the location, it is a ‘supermarket’.
+![fashola-missing-segment](imgs/supermarket-fashola.png) ![segment-empty-string](imgs/segment-empty.png)
 
-Also, the `customers` table has a name inconsistency in the `region` column. There are instances of `lagos` and `Lagos`.
+Also, the `customers` table has a name inconsistency in the `region` column. There are instances of `lagos` and `Lagos`. ![lagos-inconsistency](imgs/lagos-inconsistent.png)
 
 **<span style="text-decoration:underline;">Resolution:</span>** replaced the `lagos` value with `Lagos`, to ensure consistency with other named regions. 
 
-The `products` table, the `product_name` column contains rows with whitespaces disrupting the same text; e.g., Power Horse 250ml
+The `products` table, the `product_name` column contains rows with whitespaces disrupting the same text; e.g., Power Horse 250ml ![unnecessary-white-spacees](imgs/space-with-words.png)
 
 **<span style="text-decoration:underline;">Resolution</span>**: removed the unnecessary whitespaces.
  
-The `products` table, the `sub_category` column contain 6% empty strings; the empty rows don’t give the `category`. This can be researched and filled since it is only two rows.
+The `products` table, the `sub_category` column contain 6% empty strings; the empty rows don’t give the `category`. This can be researched and filled since it is only two rows. ![sub-category-empty](imgs/sub-category-empty.png)
 
 **<span style="text-decoration:underline;">Resolution</span>**: Based on research, in the FMCG industry, Chivita 100% Orange 1L and Ribena Blackcurrant 300ml fall primarily under the `Beverages` and `Health and Wellness` categories, respectively, but they are both sub-categories of `Juice & Nectar`.  Therefore, the empty strings were replaced with `Juice & Nectar`.
 
-In the `products` table, the `category` column has a name inconsistency with `Beverages`
+In the `products` table, the `category` column has a name inconsistency with `Beverages` ![beverage-consistency](imgs/beverage-consistency.png)
 
 **<span style="text-decoration:underline;">Resolution:</span>** replaced the `beverages` with `Beverages` to ensure naming consistency.
 
- 
-
-In the `products` table, the `unit_price_NGN` column was also analysed using the `Groupby` method to identify the duplicated unit prices:
-
+In the `products` table, the `unit_price_NGN` column was also analysed using the `Groupby` method to identify the duplicated unit prices: ![UnitPrice-duplicate](imgs/UnitPrice-duplicate.png)
 However, the product names were different, suggesting different values in unit_prices.
 
- 
+Similarly, `cost_price_NGN` contains duplicate values, as the number of distinct values exceeds the number of unique values. It was also analysed using the `Groupby` method to identify the duplicated unit prices, also suggesting different values in unit_prices. ![cost-price-duplicate](imgs/cost-price-duplicate.png)
 
-Similarly, `cost_price_NGN` contains duplicate values, as the number of distinct values exceeds the number of unique values. It was also analysed using the `Groupby` method to identify the duplicated unit prices, also suggesting different values in unit_prices.
+In the `sales` table, the `order_ID` column was also analysed using the `Groupby` method to identify the duplicated ids: ![order-id-duplicate](imgs/order-id-duplicate.png)
 
-In the `sales` table, the `order_ID` column was also analysed using the `Groupby` method to identify the duplicated ids:
-
-The order id `ORD00780` appeared twice. This shows duplication of the order by an individual, as shown below:
+The order id `ORD00780` appeared twice. This shows duplication of the order by an individual, as shown below: ![order-id-repeat](imgs/order-id-repeat.png)
 
 **<span style="text-decoration:underline;">Resolution</span>**: removed duplicates from the customer_id row.
-
  
-
 In the Sales table, the `unit_sold` indicates the number of products sold; having a null value here is not appropriate. Since only one row is `null`, we can replace the value with `0`.
 
- 
-
-Also, in the Sales table, the `region`column contains inconsistent naming, with `PH` and `Port Harcourt`
+Also, in the Sales table, the `region`column contains inconsistent naming, with `PH` and `Port Harcourt` ![region-consistentcy](imgs/region-consistentcy.png)
 
 **<span style="text-decoration:underline;">Resolution:</span>** ensured consistency by retaining `Port Harcourt`, since the other regions were named in full. E.g., Lagos, Abuja.
 
- 
+In the Sales table, the `unit_price` indicates the cost for buying a unit of a product; having a null value here is not appropriate. Since only one row is `null`, I decided to use the average cost by region (Kano) for the product based on the sales table, which is `821`. ![unit-sold-kano](imgs/unit-sold-kano.png)
 
-In the Sales table, the `unit_price` indicates the cost for buying a unit of a product; having a null value here is not appropriate. Since only one row is `null`, I decided to use the average cost by region (Kano) for the product based on the sales table, which is `821`.
+The `discount_pt` column contains an error in the row. The error was removed. ![discount-pt-error](imgs/discount-pt-error.png)
 
-The `discount_pt` column contains an error in the row. The error was removed.
+The pattern in the `salesreps` table shows that each `manager` was simultaneously attached to their representatives; therefore, `Musa Bello` should be the manager of `Sule Maikano` ![sales-reps-manager](imgs/sales-reps-manager.png)
 
-The pattern in the `salesreps` table shows that each `manager` was simultaneously attached to their representatives; therefore, `Musa Bello` should be the manager of `Sule Maikano`
+Unpivoting the `targets` table from wide format (months as columns) to long format (one row per month-region combination). ![check-unpivoting-target](imgs/check-unpivoting-target.png)
 
-Unpivoting the `targets` table from wide format (months as columns) to long format (one row per month-region combination).
+Created a Date Dimension table using DAX with includes the `Year`, `Month Number`, `Month Name`, `Quarter`, and `Week Number`. After which it was marked as a date table. The columns are as shown below: ![check-unpivoting-target](imgs/check-unpivoting-target.png)
 
- 
-
- 
-
-Created a Date Dimension table using DAX with includes the `Year`, `Month Number`, `Month Name`, `Quarter`, and `Week Number`. After which it was marked as a date table. The columns are as shown below:
-
- 
-
-Built a Star Schema: `Sales` (Fact) connected to `Products`, `Customers`, `SalesReps`, `Targets`, and `Date` (all Dimension/Reference tables) and verified the correct relationship cardinality (one-to-many) and filter direction on every relationship.
-
- 
+Built a Star Schema: `Sales` (Fact) connected to `Products`, `Customers`, `SalesReps`, `Targets`, and `Date` (all Dimension/Reference tables) and verified the correct relationship cardinality (one-to-many) and filter direction on every relationship. ![schema-relationships](imgs/schema-relationships.png)
 
 The `targets` and `sales` tables do not have a matching column to create a working relationship. Therefore, I created a matching key on each side, then relate on that key.
 
- 
-
-**<span style="text-decoration:underline;">Resolution</span>**: I added a column on `sales` that matches the same format as `targets`:
-
-`Year_Month = Text.From(Date.Year([Order_Date])) & "-" & Text.From(Date.Month([Order_Date]))`
-
- 
+**<span style="text-decoration:underline;">Resolution</span>**: I added a column on `sales` that matches the same format as `targets`: `Year_Month = Text.From(Date.Year([Order_Date])) & "-" & Text.From(Date.Month([Order_Date]))`
 
 And also created a composite key column on both tables:
 
 On Sales:
-
 `RegionMonthKey = Sales[Region] & "|" & Sales[Year_Month]`
-
  
-
 On Targets:
-
 `RegionMonthKey = Targets[Region] & "|" & Targets[Year_Month]`
 
-
 ## **3.2  DAX Measures**
-
 Created a dedicated Measures Table (an empty table named `_Measures`), which contained all measures in the data model inside it.
-
 
 <table>
   <tr>
@@ -393,43 +362,27 @@ DIVIDE(Total Revenue, [Revenue excl. Region Filter], 0)
   </tr>
 </table>
 
-
- 
-
-The measures were created using the formulas provided above in the table, and the output is as shown below:
-
+The measures were created using the formulas provided above in the table, and the output is as shown below: ![measures-table](imgs/measures-table.png)
 
 ## **3.3  Report Pages & Visuals**
-
 The report contains exactly five pages. The fifth covers EDA and AI-driven analysis.
 
-
 ### **Page 1 — Executive Summary**
-
+![executive-summary](dashboards/executive-summary.png)
 
     ●     KPI Cards: Total Revenue, Total Orders, Gross Profit %, YoY Growth %, Target Achievement %
 
-
     ●     Line chart: Monthly Revenue Trend (with YTD line overlay as a secondary measure)
-
 
     ●     Bar chart: Top 5 Products by Revenue
 
-
     ●     Map visual: Revenue by State (use the map visual or filled map)
-
 
     ●     Slicer panel: Year, Quarter, Region, Product Category
 
-
     ● 	Apply report-level, page-level, and visual-level filters appropriately
 
- 
-
 **<span style="text-decoration:underline;">Key Findings:</span>**
-
-
-
 1. Total revenue across the full dataset stands at N214.37M, generated from approximately 4,000 orders.
 2. Overall Gross Profit % is 0.35 (35%), indicating a healthy blended margin across all product categories and regions.
 3. YoY Growth % is 0.47 (47%), showing strong year-over-year revenue expansion at the portfolio level.
@@ -438,25 +391,14 @@ The report contains exactly five pages. The fifth covers EDA and AI-driven analy
 6. The Total Revenue vs YTD Revenue line chart shows YTD Revenue (blue) oscillating above and below the Total Revenue (orange) trend line, with YTD pulling notably ahead mid-year before converging downward toward December — consistent with cumulative YTD logic compared against a per-period actual.
 7. The map visual confirms five active regions (Abuja, Ibadan, Kano, Lagos, Port Harcourt), each represented as a sales hub on the Nigeria map.
 
- 
-
 **<span style="text-decoration:underline;">Methodology Decisions:</span>**
-
-
-
-1. Total_Revenue, Total_Order, Gross_Profit_Pct, YoY_Growth_Pct, and Target_Achievement_Pct were each built as standalone DAX measures (not columns) so they recalculate correctly under any filter/slicer context applied on this page.
-2. YTD_Revenue uses TOTALYTD() against the marked Calendar date table to ensure accurate cumulative behavior across month boundaries.
-3. Region and Category slicers were placed on this page (rather than embedded filters) to let the dashboard reviewer interactively test how KPIs respond to scope changes.
-
- 
+1. `Total_Revenue`, `Total_Order`, `Gross_Profit_Pct`, `YoY_Growth_Pct`, and `Target_Achievement_Pct` were each built as standalone DAX measures, so they recalculate correctly under any filter/slicer context applied on this page.
+2. `YTD_Revenue` uses `TOTALYTD()` against the Calendar `date` table to ensure accurate cumulative behaviour across month boundaries.
+3. `Region` and `Category` slicers were placed on this page to let the dashboard reviewer interact with KPIs.
 
 **<span style="text-decoration:underline;">Limitations:</span>**
-
-
-
 1. Target_Achievement_Pct of 19% is reported as a single blended figure on this page; the root cause (specific regions, months, or reps driving the shortfall) is not visible here and requires drill-down on later pages.
 2. The Year/Quarter filter pane was unfiltered in the reviewed view, so this summary reflects the full 2022–2024 dataset rather than any single period.
-
 
 ### **Page 2 — Regional & Customer Analysis**
 
