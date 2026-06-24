@@ -1,6 +1,6 @@
 # **AI COMMUNITY AFRICA**
 
-## **DATA ANALYSIS TRACK - *Returning Learners *- Capstone Project**
+## *DATA ANALYSIS TRACK** - *Returning Learners *- Capstone Project**
 
 # **1. Project Overview**
 
@@ -145,13 +145,11 @@ The data was prepared using Power Query and its tools: Column Distribution, Colu
 
 The data types of the `unit_price_NGN` and `cost_price_NGN` in every table were converted to standard currency fixed decimal numbers. While the extracted `year`, `month_number`, and `month` were converted to whole numbers and text, respectively, for further modeling relationships.
 
-The first row of the `customers` table was promoted to the header. Likewise, the `products`, `sales`, `salesreps`, `targets` tables:
-![customer-header-promotion](imgs/customer-header-promotion.png)
+The first row of the `customers` table was promoted to the header. Likewise, the `products`, `sales`, `salesreps`, `targets` tables: ![customer-header-promotion](imgs/customer-header-promotion.png)
 
-The `customers` table, the `customer_ID` column was analysed by using the `Groupby` method to identify the duplicated ids:
-![duplicate-customer-ids](imgs/DUPLICATE-CUS.png)
+The `customers` table, the `customer_ID` column was analysed by using the `Groupby` method to identify the duplicated ids: ![duplicate-customer-ids](imgs/DUPLICATE-CUS.png)
 
-**<span style="text-decoration:underline;">Resolution</span>**: Counts greater than 1 show duplication. `CUS0015` was the only duplicate in this column. removed duplicates from the `customer_id` row. The `customers` table, the `segment` column contained &lt; 1% empty string. Corresponding to one empty column-row:
+**<span style="text-decoration:underline;">Resolution</span>**: Counts greater than 1 show duplication. `CUS0015` was the only duplicate in this column. removed duplicates from the `customer_id` row. The `customers` table, the `segment` column contained &lt; 1% empty string. Corresponding to one empty column-row: ![segment-empty-string](imgs/segment-empty-string.png)
 
 **<span style="text-decoration:underline;">Resolution</span>**: Since the `customer_id` follows an incremental count of the customers, removing the rows will only affect further analysis that will be done on the dataset. Moreover, analysing the Customer Name shows that all customers with the same last name have at least one of the following segments: ‘retailer’, ‘wholesaler’, ‘distributor’, ‘supermarket’, ‘pharmacy’, and the last name ’Fashola’ is missing one of the segments - ‘distributor’ and ‘supermarket’. However, based on the location, it is a ‘supermarket’.
 
