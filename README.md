@@ -519,6 +519,9 @@ The report contains exactly five pages. The fifth covers EDA and AI-driven analy
    <td>
 <strong>Description & Format</strong>
    </td>
+<td>
+<strong>Submissions</strong>
+   </td>
   </tr>
   <tr>
    <td>
@@ -530,10 +533,13 @@ The report contains exactly five pages. The fifth covers EDA and AI-driven analy
    <td>
 .pbix file — final version. All five pages, 12 measures, and full Star Schema model included.
    </td>
+   <td>
+<a href="aica-capstone.pbix">aica-capstone.pbix</a>
+   </td>
   </tr>
   <tr>
    <td>
-<strong>3</strong>
+<strong>2</strong>
    </td>
    <td>
 <strong>Power BI Dashboard Screenshot</strong>
@@ -541,10 +547,17 @@ The report contains exactly five pages. The fifth covers EDA and AI-driven analy
    <td>
 Screenshot of your dashboard.
    </td>
+   <td>
+<a href="dashboards/executive-summary.png">executive-summary</a>
+<a href="dashboards/regional-and-customer-analysis.png">regional-and-customer-analysis</a>
+<a href="dashboards/product-performance.png">product-performance</a>
+<a href="dashboards/sales-team-and-time-intelligence.png">sales-team-and-time-intelligence</a>
+<a href="dashboards/eda-and-trend-analysis.png">eda-and-trend-analysis</a>
+   </td>
   </tr>
   <tr>
    <td>
-<strong>4</strong>
+<strong>3</strong>
    </td>
    <td>
 <strong>Recorded Presentation</strong>
@@ -552,16 +565,22 @@ Screenshot of your dashboard.
    <td>
 5–10 minute screen recording walking through your dashboard. Narrate your insights, not just your clicks.
    </td>
+   <td>
+download here
+   </td>
   </tr>
   <tr>
    <td>
-<strong>5</strong>
+<strong>4</strong>
    </td>
    <td>
 <strong>Written Summary (Optional +5%)</strong>
    </td>
    <td>
 1-page PDF: key findings, methodology decisions, data quality issues encountered, and any limitations.
+   </td>
+   <td>
+download here
    </td>
   </tr>
 </table>
