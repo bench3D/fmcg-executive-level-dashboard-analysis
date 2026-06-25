@@ -44,7 +44,7 @@ Fact Table — Orders
 <em>CSV</em>
    </td>
    <td>
-<a href="C:\Users\hp\fmcg-executive-level-dashboard-analysis\Sales.csv">Download Sales.csv</a>
+<a href="Sales.csv">Download Sales.csv</a>
    </td>
   </tr>
   <tr>
@@ -58,7 +58,7 @@ Dimension — Products
 <em>CSV</em>
    </td>
    <td>
-<a href="C:\Users\hp\fmcg-executive-level-dashboard-analysis\Products.csv">Download Products.csv</a>
+<a href="Products.csv">Download Products.csv</a>
    </td>
   </tr>
   <tr>
@@ -72,7 +72,7 @@ Dimension — Customers
 <em>CSV</em>
    </td>
    <td>
-<a href="C:\Users\hp\fmcg-executive-level-dashboard-analysis\Customers.csv">Download Customers.csv</a>
+<a href="Customers.csv">Download Customers.csv</a>
    </td>
   </tr>
   <tr>
@@ -86,7 +86,7 @@ Dimension — Sales Reps
 <em>CSV</em>
    </td>
    <td>
-<a href="C:\Users\hp\fmcg-executive-level-dashboard-analysis\SalesReps.csv">Download SalesReps.csv</a>
+<a href="SalesReps.csv">Download SalesReps.csv</a>
    </td>
   </tr>
   <tr>
@@ -100,7 +100,7 @@ Reference — Monthly Targets
 <em>CSV</em>
    </td>
    <td>
-<a href="C:\Users\hp\fmcg-executive-level-dashboard-analysis\Targets.csv">Download Targets.csv</a>
+<a href="Targets.csv">Download Targets.csv</a>
    </td>
   </tr>
   <tr>
@@ -114,7 +114,7 @@ Full Bundle (all 5 files)
 <em>ZIP</em>
    </td>
    <td>
-<a href="C:\Users\hp\fmcg-executive-level-dashboard-analysis\TradeFlow_Dataset.zip">Download Full Dataset Bundle</a>
+<a href="TradeFlow_Dataset.zip">Download Full Dataset Bundle</a>
    </td>
   </tr>
 </table>
