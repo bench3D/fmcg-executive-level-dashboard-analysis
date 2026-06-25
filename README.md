@@ -402,6 +402,7 @@ The report contains exactly five pages. The fifth covers EDA and AI-driven analy
 
 ### **Page 2 — Regional & Customer Analysis**
 ![regional-and-customer-analysis](dashboards/regional-and-customer-analysis.png)
+
     ●     Matrix: Revenue and Gross Profit % by Region and Customer Segment
 
     ●     Scatter plot: Revenue vs Total Orders per Customer (bubble size = Gross Profit %)
@@ -455,105 +456,60 @@ The report contains exactly five pages. The fifth covers EDA and AI-driven analy
 
 
 ### **Page 4 — Sales Team & Time Intelligence**
+![sales-team-and-time-intelligence](dashboards/sales-team-and-time-intelligence.png)
 
     ●     Bar chart: Revenue per Sales Rep with a constant line showing the average target
 
-
     ●     Table: Rep-level KPIs — Revenue, Orders, Avg Deal Size, YTD Revenue, YoY Growth %
-
 
     ●     Card: Best Performing Rep (current filter context) using a dynamic DAX title measure
 
-
     ●     Line chart: Revenue LY vs Current Year — dual lines showing Time Intelligence in action
-
 
     ● 	Slicers: Sales Rep, Manager, Team
 
- 
-
 **<span style="text-decoration:underline;">Key Findings:</span>**
-
-
-
-1. Sule Maikano is the top-performing sales rep with N29,901,409 in revenue, narrowly ahead of Taiwo Adeleke (N29,648,343.50) and Tunde Adeyemi (N28,935,639); the top three reps are tightly bunched, while a second tier (Chidinma Okafor, Kelechi Nwosu, Ngozi Eze, Emeka Obi) trails noticeably below the N12M mark.
-2. YoY_Growth_Pct is inversely related to revenue rank in this table: lower-revenue reps like Chidinma Okafor (0.50) and Taiwo Adeleke (0.48) show the highest YoY growth, while it's not the very top-revenue reps showing the fastest growth, suggesting newer or smaller-book reps are growing off a lower base, a common and expected pattern.
-3. The Revenue_LY vs Total_Revenue line chart shows current-year revenue (gold) consistently and substantially above last year's revenue (navy) across nearly every month, visually confirming the portfolio-level YoY growth reported on Page 1; though both lines trend gently downward toward the most recent months shown (November/December), which warrants attention.
-4. Total team Avg_Order_Value sits at N47,648.07, with individual reps ranging from N41,511 (Emeka Obi) to N49,675 (Kelechi Nwosu); a relatively narrow spread, suggesting deal sizing is fairly consistent across the team rather than driven by a few large-ticket reps.
-5. The Manager hierarchy (Aisha Lawal, Kunle Ogundele, Musa Bello) is set up as a collapsible Manager → Team → Name slicer, enabling drill-down from manager oversight down to individual rep performance.
-
- 
+1. `Sule Maikano` is the top-performing sales rep with `N29,901,409` in revenue, narrowly ahead of `Taiwo Adeleke (N29,648,343.50)` and `Tunde Adeyemi (N28,935,639)`; the top three reps are tightly bunched, while a second tier `(Chidinma Okafor, Kelechi Nwosu, Ngozi Eze, Emeka Obi)` trails noticeably below the `N12M` mark.
+2. `YoY_Growth_Pct` is inversely related to revenue rank in this table: lower-revenue reps like `Chidinma Okafor (0.50)` and `Taiwo Adeleke (0.48)` show the highest YoY growth, while it's not the very top-revenue reps showing the fastest growth, suggesting newer or smaller-book reps are growing off a lower base, a common and expected pattern.
+3. The `Revenue_LY` vs `Total_Revenue` line chart shows current-year revenue (gold) consistently and substantially above last year's revenue (navy) across nearly every month, visually confirming the portfolio-level YoY growth reported on Page 1; though both lines trend gently downward toward the most recent months shown (November/December), which warrants attention.
+4. `Total team Avg_Order_Value` sits at `N47,648.07`, with individual reps ranging from `N41,511 (Emeka Obi) to N49,675 (Kelechi Nwosu)`; a relatively narrow spread, suggesting deal sizing is fairly consistent across the team rather than driven by a few large-ticket reps.
+5. The Manager hierarchy `(Aisha Lawal, Kunle Ogundele, Musa Bello)` is set up as a collapsible Manager > Team > Name slicer, enabling drill-down from manager oversight down to individual rep performance.
 
 **<span style="text-decoration:underline;">Methodology Decisions:</span>**
-
-
-
-1. Best Performing Rep / dynamic card title was built using a TOPN(1, ALL(SalesRep[RepName]), [Revenue], DESC) pattern wrapped in CALCULATE(SELECTEDVALUE(...)) so the trophy card title text dynamically updates to whichever rep is top under the current filter context (e.g., if a Manager or Team filter is applied).
-2. Revenue_LY uses CALCULATE([Revenue], SAMEPERIODLASTYEAR('Calendar'[Date])) plotted against current Total_Revenue on the same chart and shared axis to visually demonstrate time intelligence rather than reporting YoY as a number-only KPI.
-3. The Manager/Team/Name slicer was built as a single hierarchical field group (rather than three separate slicers) so the Manager → Team → Name nesting collapses/expands in one control, matching the org structure.
-
- 
+1. `Best Performing Rep / dynamic card` title was built using a `TOPN(1, ALL(SalesRep[RepName]), [Revenue], DESC)` pattern wrapped in `CALCULATE(SELECTEDVALUE(...))` so the trophy card title text dynamically updates to whichever rep is top under the current filter context.
+2. `Revenue_LY` uses `CALCULATE([Revenue], SAMEPERIODLASTYEAR('Calendar'[Date]))` plotted against current `Total_Revenue` on the same chart and shared axis to visually demonstrate time intelligence rather than reporting YoY as a number-only KPI.
+3. The `Manager/Team/Name` slicer was built as a single hierarchical field group (rather than three separate slicers) so the `Manager > Team > Name` nesting expands in one control, matching the organizational structure.
 
 **<span style="text-decoration:underline;">Limitations:</span>**
-
-
-
 1. The downward tail in both Revenue_LY and Total_Revenue lines toward the most recent months (November, December) is visible but not explained by any visual on this page — it may simply reflect partial/incomplete data for the most recent period rather than a genuine decline, and should be verified against the raw date range in the model.
 
-
 ### **Page 5 — EDA & Trend Analysis**
+![eda-and-trend-analysis](dashboards/eda-and-trend-analysis.png)
 
+    ● Histogram: Distribution of Order Values — identify skew and outliers (Session 16)
 
-    ●     Histogram: Distribution of Order Values — identify skew and outliers (Session 16)
+    ● Box-and-whisker plot: Revenue distribution by Region — compare spread and medians
 
+    ● Time series line chart: 12-month rolling revenue with trend line enabled
 
-    ●     Box-and-whisker plot: Revenue distribution by Region — compare spread and medians
+    ● Key Influencers visual (second instance): What drives high Total Orders? — Session 17
 
-
-    ●     Time series line chart: 12-month rolling revenue with trend line enabled
-
-
-    ●     Key Influencers visual (second instance): What drives high Total Orders? — Session 17
-
-
-    ● 	Narrative text box: A written interpretation of the EDA findings (2–3 sentences, typed into a Power BI text box)
-
- 
+    ● Narrative text box: A written interpretation of the EDA findings (2–3 sentences, typed into a Power BI text box)
 
 **<span style="text-decoration:underline;">Key Findings:</span>**
-
-
-
-1. Beverages dominates order volume, with nearly 2,000 orders — almost double Food & Condiments (the second-highest category) — confirming Beverages as the primary driver of overall transaction activity, consistent with the Page 3 product-level finding.
-2. Total_Revenue by Year and Quarter shows a clear declining trend, falling from a peak of roughly N22M in an early quarter (2022) to approximately N11M by the most recent quarter shown (Q4 2024) — a sustained downward trajectory across the full three-year window, even though YoY_Growth_Pct reported on Page 1 (0.47) is positive at the portfolio level. These two findings are not necessarily contradictory: YoY growth compares matched periods, while this chart shows overall quarterly revenue magnitude declining, which should be reconciled before final reporting.
-3. The Key Influencers analysis identifies City is Dala as the strongest driver of an increase in Total_Order, contributing an average uplift of 15.23 orders — notably ahead of City is Dugbe (13.93).
-4. The supporting bar chart of Average Total_Order by City confirms Dala (~29) and Dugbe (~27) as the two leading cities, while Ring Road and Lagos Island sit at the bottom of the ranking (~16–17) — roughly half the order volume of the top cities.
-
- 
+1. `Beverages` dominates order volume, with nearly `2,000 orders` (almost double `Food & Condiments, which is the second-highest category)`, confirming `Beverages` as the primary driver of overall transaction activity, consistent with the Page 3 product-level finding.
+2. `Total_Revenue` by `Year` and `Quarter` shows a clear declining trend, falling from a peak of roughly `N22M` in an `early quarter (2022)` to approximately `N11M` by the most recent `quarter` shown `(Q4 2024)` — a sustained downward trajectory across the full three-year window, even though `YoY_Growth_Pct` reported on Page 1 `(0.47)` is positive at the portfolio level. These two findings are not necessarily contradictory: `YoY growth` compares matched periods, while this chart shows overall quarterly revenue magnitude declining, which should be reconciled before final reporting.
+3. The Key Influencers analysis identifies City is `Dala` as the strongest driver of an increase in `Total_Order`, contributing an average uplift of `15.23 orders` — notably ahead of `City` is `Dugbe (13.93)`.
+4. The supporting bar chart of Average `Total_Order` by `City` confirms `Dala (~29)` and `Dugbe (~27)` as the two leading cities, while `Ring Road` and `Lagos Island` sit at the bottom of the ranking `(~16–17)` — roughly half the order volume of the top cities.
 
 **<span style="text-decoration:underline;">Methodology Decisions:</span>**
-
-
-
-1. The Key Influencers visual was configured to analyze 'what influences Total_Order to Increase' using City as a candidate explanatory field, leveraging Power BI's built-in statistical influencer algorithm rather than a manual DAX-based driver analysis, to surface non-obvious patterns quickly during EDA.
-2. Total_Revenue by Year and Quarter was deliberately left as a flat bar chart (not broken out by category or region) at this stage, since the goal of this page is high-level trend/skew detection before deeper segmentation on Pages 2–4.
-3. EDA Findings were written as a numbered narrative text box rather than a separate report, so the interpretive commentary sits directly alongside the charts it explains.
-
- 
+1. The Key Influencers visual was configured to analyze `'what influences Total_Order to Increase'` using `City` as a candidate explanatory field, leveraging Power BI's built-in statistical influencer algorithm rather than a manual DAX-based driver analysis, to surface non-obvious patterns quickly during EDA.
+2. `Total_Revenue` by `Year` and `Quarter` was deliberately left as a flat bar chart (not broken out by category or region).
 
 **<span style="text-decoration:underline;">Limitations:</span>**
-
-
-
-1. Key Influencers results reflect statistical association, not causation — the Dala/Dugbe city effect on Total_Order should be framed as a correlation worth investigating operationally (e.g., rep coverage, customer density), not a proven causal driver.
-
+1. Key Influencers results reflect statistical association, not causation — the `Dala/Dugbe` city effect on `Total_Order` should be framed as a correlation worth investigating operationally (e.g., rep coverage, customer density), not a proven causal driver.
 
 # **5. Submission Deliverables**
-
-You must submit ALL of the following. Incomplete submissions will receive a zero for the missing component.
-
- 
-
 
 <table>
   <tr>
@@ -597,7 +553,7 @@ Screenshot of your dashboard.
 <strong>Recorded Presentation</strong>
    </td>
    <td>
-5–10 minute screen recording walking through your dashboard. Narrate your insights, not just your clicks. Answer at least five of the seven business questions from Section 7.
+5–10 minute screen recording walking through your dashboard. Narrate your insights, not just your clicks.
    </td>
   </tr>
   <tr>
@@ -613,14 +569,5 @@ Screenshot of your dashboard.
   </tr>
 </table>
 
-FMCG Company Colour Codes used for the dashboard analysis:
-
-0E2B63, rgb(14,43,99)
-
-004F9F, rgb(0,79,159)
-
-00B1EB. rgb(0,177,235)
-
-EF7D00. rgb(239,125,0)
-
-FFBB00, rgb(255,187,0)
+The FMCG Company Colour Codes used for the dashboard visualizations are:
+0E2B63, rgb(14,43,99); 004F9F, rgb(0,79,159); 00B1EB, rgb(0,177,235); EF7D00, rgb(239,125,0); FFBB00, rgb(255,187,0).
