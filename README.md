@@ -1,6 +1,6 @@
 # **AI COMMUNITY AFRICA**
 
-## *DATA ANALYSIS TRACK** - *Returning Learners *- Capstone Project**
+## **DATA ANALYSIS TRACK** - *Returning Learners - Capstone Project*
 
 # **1. Project Overview**
 
@@ -13,11 +13,9 @@ The Head of Commercial Analytics has asked you to build an executive-level Retai
 Management needs to make Q3 budget decisions within two weeks. Your dashboard is the primary input.
 
 ## **1.1  Why This Project Matters**
-
 This capstone is intentionally designed to mirror a real commercial brief. It tests not only your technical ability, but also your capacity to communicate insights clearly to a non-technical audience. Every skill from every session maps directly to a task you will perform in this project.
 
 # **2. Dataset — Download Links**
-
 Your dataset is a simulated but realistic multi-table collection, designed to replicate the kind of messy, real-world data you will encounter in a Nigerian FMCG business. Download each file individually using the links in the table below, or download the full bundle from the ZIP link provided underneath.
 
 <table>
@@ -122,7 +120,6 @@ Full Bundle (all 5 files)
 </table>
 
 Dataset Contents at a Glance:
-
 `sales.csv` — Order ID, Date, Product ID, Customer ID, Rep ID, Region, Units Sold, Unit Price, Discount %
 
 `products.csv` — Product ID, Product Name, Category, Sub-Category, Cost Price (NGN)
@@ -133,7 +130,7 @@ Dataset Contents at a Glance:
 
 `targets.csv` — Month, Region, Sales Target (NGN)
 
-**NOTE: **The data contains intentional quality issues (nulls, wrong types, duplicates, inconsistent spellings) for you to clean using Power Query — this is part of the assessment.
+**NOTE**: The data contains intentional quality issues (nulls, wrong types, duplicates, inconsistent spellings) for you to clean using Power Query — this is part of the assessment.
 
 *A Date Dimension table is NOT provided — you must create it yourself using DAX (CALENDAR or CALENDARAUTO) as part of your submission. It must include calculated columns for Year, Month Number, Month Name, Quarter, and Week Number.*
 
@@ -370,17 +367,17 @@ The report contains exactly five pages. The fifth covers EDA and AI-driven analy
 ### **Page 1 — Executive Summary**
 ![executive-summary](dashboards/executive-summary.png)
 
-    ●     KPI Cards: Total Revenue, Total Orders, Gross Profit %, YoY Growth %, Target Achievement %
+    ● KPI Cards: Total Revenue, Total Orders, Gross Profit %, YoY Growth %, Target Achievement %
 
-    ●     Line chart: Monthly Revenue Trend (with YTD line overlay as a secondary measure)
+    ● Line chart: Monthly Revenue Trend (with YTD line overlay as a secondary measure)
 
-    ●     Bar chart: Top 5 Products by Revenue
+    ● Bar chart: Top 5 Products by Revenue
 
-    ●     Map visual: Revenue by State (use the map visual or filled map)
+    ● Map visual: Revenue by State (use the map visual or filled map)
 
-    ●     Slicer panel: Year, Quarter, Region, Product Category
+    ● Slicer panel: Year, Quarter, Region, Product Category
 
-    ● 	Apply report-level, page-level, and visual-level filters appropriately
+    ● Apply report-level, page-level, and visual-level filters appropriately
 
 **<span style="text-decoration:underline;">Key Findings:</span>**
 1. `Total revenue` across the full dataset stands at N214.37M, generated from approximately 4,000 orders.
@@ -403,15 +400,15 @@ The report contains exactly five pages. The fifth covers EDA and AI-driven analy
 ### **Page 2 — Regional & Customer Analysis**
 ![regional-and-customer-analysis](dashboards/regional-and-customer-analysis.png)
 
-    ●     Matrix: Revenue and Gross Profit % by Region and Customer Segment
+    ● Matrix: Revenue and Gross Profit % by Region and Customer Segment
 
-    ●     Scatter plot: Revenue vs Total Orders per Customer (bubble size = Gross Profit %)
+    ● Scatter plot: Revenue vs Total Orders per Customer (bubble size = Gross Profit %)
 
-    ●     Decomposition Tree: Revenue broken down by Region > Category > Product — Session 17
+    ● Decomposition Tree: Revenue broken down by Region > Category > Product — Session 17
 
-    ●     Clustered bar chart: Revenue vs Target by Region
+    ● Clustered bar chart: Revenue vs Target by Region
 
-    ● 	Region Revenue Share % card using the ALL-based measure
+    ● Region Revenue Share % card using the ALL-based measure
 
 **<span style="text-decoration:underline;">Key Findings:</span>**
 1. `Lagos (N44.67M)` and `Abuja (N44.10M)` are the top two regions by revenue, closely followed by `Ibadan (N44.19M)` and `Kano (N43.68M)`. The four leading regions are tightly clustered within roughly N1M of each other, indicating a fairly even regional spread and not one dominant hub.
@@ -431,13 +428,13 @@ The report contains exactly five pages. The fifth covers EDA and AI-driven analy
 ### **Page 3 — Product Performance**
 ![product-performance](dashboards/product-performance.png)
 
-    ●     Treemap: Revenue contribution by Product Category
+    ● Treemap: Revenue contribution by Product Category
 
-    ●     Table: Product-level detail — Revenue, Cost, Gross Profit, GP%, Units Sold — with conditional formatting on GP%
+    ● Table: Product-level detail — Revenue, Cost, Gross Profit, GP%, Units Sold — with conditional formatting on GP%
 
-    ●     Line chart: Monthly sales trend per Category (date hierarchy + drill-down from Session 3)
+    ● Line chart: Monthly sales trend per Category (date hierarchy + drill-down from Session 3)
 
-    ● 	Key Influencers visual: What factors drive high Gross Profit %? — AI visual from Session 17
+    ● Key Influencers visual: What factors drive high Gross Profit %? — AI visual from Session 17
 
 **<span style="text-decoration:underline;">Key Findings:</span>**
 1.  Across the full product table, total `Gross_Profit_Pct` is `0.35`, with **Bullet Energy 250ml, Grand Malt 330ml, and Power Horse 250ml** each posting the strongest margin at `0.39` (shown in green), while **Chivita 100% Orange 1L lags** at `0.30` (shown in red) despite being a top revenue earner (a classic 'high volume, lower margin' product profile).
@@ -454,19 +451,18 @@ The report contains exactly five pages. The fifth covers EDA and AI-driven analy
 1. The page does not break out `Gross_Profit_Pct` by `Region` or `Sales Rep`, so it's not possible from this view alone to tell whether the `N220–N280` pricing/margin issue is concentrated in specific regions or spread evenly.
 2. Margin analysis here is static (whole-period); no time trend of `Gross_Profit_Pct` itself is shown, only `Total_Revenue` trend by category.
 
-
 ### **Page 4 — Sales Team & Time Intelligence**
 ![sales-team-and-time-intelligence](dashboards/sales-team-and-time-intelligence.png)
 
-    ●     Bar chart: Revenue per Sales Rep with a constant line showing the average target
+    ● Bar chart: Revenue per Sales Rep with a constant line showing the average target
 
-    ●     Table: Rep-level KPIs — Revenue, Orders, Avg Deal Size, YTD Revenue, YoY Growth %
+    ● Table: Rep-level KPIs — Revenue, Orders, Avg Deal Size, YTD Revenue, YoY Growth %
 
-    ●     Card: Best Performing Rep (current filter context) using a dynamic DAX title measure
+    ● Card: Best Performing Rep (current filter context) using a dynamic DAX title measure
 
-    ●     Line chart: Revenue LY vs Current Year — dual lines showing Time Intelligence in action
+    ● Line chart: Revenue LY vs Current Year — dual lines showing Time Intelligence in action
 
-    ● 	Slicers: Sales Rep, Manager, Team
+    ● Slicers: Sales Rep, Manager, Team
 
 **<span style="text-decoration:underline;">Key Findings:</span>**
 1. `Sule Maikano` is the top-performing sales rep with `N29,901,409` in revenue, narrowly ahead of `Taiwo Adeleke (N29,648,343.50)` and `Tunde Adeyemi (N28,935,639)`; the top three reps are tightly bunched, while a second tier `(Chidinma Okafor, Kelechi Nwosu, Ngozi Eze, Emeka Obi)` trails noticeably below the `N12M` mark.
@@ -508,6 +504,7 @@ The report contains exactly five pages. The fifth covers EDA and AI-driven analy
 
 **<span style="text-decoration:underline;">Limitations:</span>**
 1. Key Influencers results reflect statistical association, not causation — the `Dala/Dugbe` city effect on `Total_Order` should be framed as a correlation worth investigating operationally (e.g., rep coverage, customer density), not a proven causal driver.
+2. I was unable to import the box-and-whisker plot, likewise the histogram bining was an issue with my device. therefore, I improvised with the available plottings.
 
 # **5. Submission Deliverables**
 
