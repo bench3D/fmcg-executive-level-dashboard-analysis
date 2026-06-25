@@ -548,10 +548,10 @@ The report contains exactly five pages. The fifth covers EDA and AI-driven analy
 Screenshot of your dashboard.
    </td>
    <td>
-<a href="dashboards/executive-summary.png">executive-summary</a>
-<a href="dashboards/regional-and-customer-analysis.png">regional-and-customer-analysis</a>
-<a href="dashboards/product-performance.png">product-performance</a>
-<a href="dashboards/sales-team-and-time-intelligence.png">sales-team-and-time-intelligence</a>
+<a href="dashboards/executive-summary.png">executive-summary</a>;
+<a href="dashboards/regional-and-customer-analysis.png">regional-and-customer-analysis</a>;
+<a href="dashboards/product-performance.png">product-performance</a>;
+<a href="dashboards/sales-team-and-time-intelligence.png">sales-team-and-time-intelligence</a>;
 <a href="dashboards/eda-and-trend-analysis.png">eda-and-trend-analysis</a>
    </td>
   </tr>
@@ -566,7 +566,7 @@ Screenshot of your dashboard.
 5–10 minute screen recording walking through your dashboard. Narrate your insights, not just your clicks.
    </td>
    <td>
-download here
+<a href="">download here</a>
    </td>
   </tr>
   <tr>
@@ -580,7 +580,7 @@ download here
 1-page PDF: key findings, methodology decisions, data quality issues encountered, and any limitations.
    </td>
    <td>
-download here
+<a href="">download here</a>
    </td>
   </tr>
 </table>
