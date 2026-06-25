@@ -580,7 +580,7 @@ Screenshot of your dashboard.
 1-page PDF: key findings, methodology decisions, data quality issues encountered, and any limitations.
    </td>
    <td>
-<a href="">download here</a>
+<a href="fmcg-summary.pdf">fmcg-summary.pdf</a>
    </td>
   </tr>
 </table>
