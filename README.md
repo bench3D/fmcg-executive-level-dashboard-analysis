@@ -586,10 +586,10 @@ Screenshot of your dashboard.
 </table>
 
 The FMCG Company Colour Codes used for the dashboard visualizations are:
-0E2B63, rgb(14,43,99); 004F9F, rgb(0,79,159); 00B1EB, rgb(0,177,235); EF7D00, rgb(239,125,0); FFBB00, rgb(255,187,0).
+0E2B63 or rgb(14,43,99); 004F9F or rgb(0,79,159); 00B1EB or rgb(0,177,235); EF7D00 or rgb(239,125,0); FFBB00 or rgb(255,187,0).
 
 ## 💡 Tools Used
-- Power BI (Data Modelling, Pivot Tables, Charts, Conditional Formatting)
+- Power BI (Data Modelling, Pivot Tables, Charts and Visualizations, Filters and Conditional Formatting)
 - Power Query (Data Preparation, Cleaning & Transformation)
 
 ---
