@@ -14,7 +14,7 @@ Management needs to make Q3 budget decisions within two weeks. Your dashboard is
 
 ## **1.1  Why This Project Matters**
 This capstone is intentionally designed to mirror a real commercial brief. It tests not only your technical ability, but also your capacity to communicate insights clearly to a non-technical audience. Every skill from every session maps directly to a task you will perform in this project.
-
+---
 # **2. Dataset — Download Links**
 Your dataset is a simulated but realistic multi-table collection, designed to replicate the kind of messy, real-world data you will encounter in a Nigerian FMCG business. Download each file individually using the links in the table below, or download the full bundle from the ZIP link provided underneath.
 
@@ -133,7 +133,7 @@ Dataset Contents at a Glance:
 **NOTE**: The data contains intentional quality issues (nulls, wrong types, duplicates, inconsistent spellings) for you to clean using Power Query — this is part of the assessment.
 
 *A Date Dimension table is NOT provided — you must create it yourself using DAX (CALENDAR or CALENDARAUTO) as part of your submission. It must include calculated columns for Year, Month Number, Month Name, Quarter, and Week Number.*
-
+---
 # **3. Project Requirements**
 Your completed report must address all five requirement areas below. Every requirement maps to specific sessions as shown in the Topic Coverage Map (Section 3).
 
@@ -505,9 +505,8 @@ The report contains exactly five pages. The fifth covers EDA and AI-driven analy
 **<span style="text-decoration:underline;">Limitations:</span>**
 1. Key Influencers results reflect statistical association, not causation — the `Dala/Dugbe` city effect on `Total_Order` should be framed as a correlation worth investigating operationally (e.g., rep coverage, customer density), not a proven causal driver.
 2. I was unable to import the box-and-whisker plot, likewise the histogram bining was an issue with my device. therefore, I improvised with the available plottings.
-
-# **5. Submission Deliverables**
-
+---
+# **4. Submission Deliverables**
 <table>
   <tr>
    <td>
