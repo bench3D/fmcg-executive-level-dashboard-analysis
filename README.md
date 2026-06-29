@@ -507,82 +507,12 @@ The report contains exactly five pages. The fifth covers EDA and AI-driven analy
 2. I was unable to import the box-and-whisker plot, likewise the histogram bining was an issue with my device. therefore, I improvised with the available plottings.
 ---
 # **4. Submission Deliverables**
-<table>
-  <tr>
-   <td>
-<strong>#</strong>
-   </td>
-   <td>
-<strong>Deliverable</strong>
-   </td>
-   <td>
-<strong>Description & Format</strong>
-   </td>
-<td>
-<strong>Submissions</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>
-<strong>1</strong>
-   </td>
-   <td>
-<strong>Power BI Report File</strong>
-   </td>
-   <td>
-.pbix file — final version. All five pages, 12 measures, and full Star Schema model included.
-   </td>
-   <td>
-<a href="aica-capstone.pbix">aica-capstone.pbix</a>
-   </td>
-  </tr>
-  <tr>
-   <td>
-<strong>2</strong>
-   </td>
-   <td>
-<strong>Power BI Dashboard Screenshot</strong>
-   </td>
-   <td>
-Screenshot of your dashboard.
-   </td>
-   <td>
-<a href="dashboards/executive-summary.png">executive-summary</a>;
-<a href="dashboards/regional-and-customer-analysis.png">regional-and-customer-analysis</a>;
-<a href="dashboards/product-performance.png">product-performance</a>;
-<a href="dashboards/sales-team-and-time-intelligence.png">sales-team-and-time-intelligence</a>;
-<a href="dashboards/eda-and-trend-analysis.png">eda-and-trend-analysis</a>
-   </td>
-  </tr>
-  <tr>
-   <td>
-<strong>3</strong>
-   </td>
-   <td>
-<strong>Recorded Presentation</strong>
-   </td>
-   <td>
-5–10 minute screen recording walking through your dashboard. Narrate your insights, not just your clicks.
-   </td>
-   <td>
-<a href="">download here</a>
-   </td>
-  </tr>
-  <tr>
-   <td>
-<strong>4</strong>
-   </td>
-   <td>
-<strong>Written Summary (Optional +5%)</strong>
-   </td>
-   <td>
-1-page PDF: key findings, methodology decisions, data quality issues encountered, and any limitations.
-   </td>
-   <td>
-<a href="fmcg-summary.pdf">fmcg-summary.pdf</a>
-   </td>
-  </tr>
-</table>
+| # | Deliverable | Description & Format | Submissions |
+|---|-------------|----------------------|-------------|
+| **1** | **Power BI Report File** | .pbix file — final version. All five pages, 12 measures, and full Star Schema model included. | [aica-capstone.pbix](aica-capstone.pbix) |
+| **2** | **Power BI Dashboard Screenshot** | Screenshot of your dashboard. | [executive-summary](dashboards/executive-summary.png); [regional-and-customer-analysis](dashboards/regional-and-customer-analysis.png); [product-performance](dashboards/product-performance.png); [sales-team-and-time-intelligence](dashboards/sales-team-and-time-intelligence.png); [eda-and-trend-analysis](dashboards/eda-and-trend-analysis.png) |
+| **3** | **Recorded Presentation** | 5–10 minute screen recording walking through your dashboard. Narrate your insights, not just your clicks. | [download here]() |
+| **4** | **Written Summary (Optional +5%)** | 1-page PDF: key findings, methodology decisions, data quality issues encountered, and any limitations. | [fmcg-summary.pdf](fmcg-summary.pdf) |
 
 The FMCG Company Colour Codes used for the dashboard visualizations are:
 0E2B63 or rgb(14,43,99); 004F9F or rgb(0,79,159); 00B1EB or rgb(0,177,235); EF7D00 or rgb(239,125,0); FFBB00 or rgb(255,187,0).
