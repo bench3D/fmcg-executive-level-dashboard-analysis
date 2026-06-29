@@ -525,5 +525,5 @@ The FMCG Company Colour Codes used for the dashboard visualizations are:
 
 ## 👤 Author
 **Benedict Chima Ogbulachi**  
-[LinkedIn Profile] <a href="https://www.linkedin.com/in/benedictogbulachi">Benedict Ogbulachi</a>
+LinkedIn Profile: [Benedict Ogbulachi](https://www.linkedin.com/in/benedictogbulachi)
 Email Adress: benedictogbulachi@outlook.com
