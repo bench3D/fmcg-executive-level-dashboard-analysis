@@ -465,7 +465,7 @@ The report contains exactly five pages. The fifth covers EDA and AI-driven analy
     ● Slicers: Sales Rep, Manager, Team
 
 **<span style="text-decoration:underline;">Key Findings:</span>**
-1. `Sule Maikano` is the top-performing sales rep with `N29,901,409` in revenue, narrowly ahead of `Taiwo Adeleke (N29,648,343.50)` and `Tunde Adeyemi (N28,935,639)`; the top three reps are tightly bunched, while a second tier `(Chidinma Okafor, Kelechi Nwosu, Ngozi Eze, Emeka Obi)` trails noticeably below the `N12M` mark.
+1. `Sule Maikano` is the top-performing sales rep with `N29,901,409` in revenue, narrowly ahead of `Taiwo Adeleke (N29,648,343.50)` and `Tunde Adeyemi (N28,935,639)`; the top three reps are tightly bunched, while a second tier `(Chidinma Okafor, Kelechi Nwosu, Ngozi Eze, Emeka Obi)` trails noticeably below the N12M` mark.
 2. `YoY_Growth_Pct` is inversely related to revenue rank in this table: lower-revenue reps like `Chidinma Okafor (0.50)` and `Taiwo Adeleke (0.48)` show the highest YoY growth, while it's not the very top-revenue reps showing the fastest growth, suggesting newer or smaller-book reps are growing off a lower base, a common and expected pattern.
 3. The `Revenue_LY` vs `Total_Revenue` line chart shows current-year revenue (gold) consistently and substantially above last year's revenue (navy) across nearly every month, visually confirming the portfolio-level YoY growth reported on Page 1; though both lines trend gently downward toward the most recent months shown (November/December), which warrants attention.
 4. `Total team Avg_Order_Value` sits at `N47,648.07`, with individual reps ranging from `N41,511 (Emeka Obi) to N49,675 (Kelechi Nwosu)`; a relatively narrow spread, suggesting deal sizing is fairly consistent across the team rather than driven by a few large-ticket reps.
@@ -512,17 +512,15 @@ The report contains exactly five pages. The fifth covers EDA and AI-driven analy
 | **1** | **Power BI Report File** | .pbix file — final version. All five pages, 12 measures, and full Star Schema model included. | [aica-capstone.pbix](aica-capstone.pbix) |
 | **2** | **Power BI Dashboard Screenshot** | Screenshot of your dashboard. | [executive-summary](dashboards/executive-summary.png); [regional-and-customer-analysis](dashboards/regional-and-customer-analysis.png); [product-performance](dashboards/product-performance.png); [sales-team-and-time-intelligence](dashboards/sales-team-and-time-intelligence.png); [eda-and-trend-analysis](dashboards/eda-and-trend-analysis.png) |
 | **3** | **Recorded Presentation** | 5–10 minute screen recording walking through your dashboard. Narrate your insights, not just your clicks. | [download here]() |
-| **4** | **Written Summary (Optional +5%)** | 1-page PDF: key findings, methodology decisions, data quality issues encountered, and any limitations. | [fmcg-summary.pdf](fmcg-summary.pdf) |
-
+| **4** | **Written Summary (Optional +5%)** | 1-page PDF: key findings, methodology decisions, data quality issues encountered, and any limitations. | [fmcg-summary.pdf](fmcg-summary.pdf) 
+---
 The FMCG Company Colour Codes used for the dashboard visualizations are:
 0E2B63 or rgb(14,43,99); 004F9F or rgb(0,79,159); 00B1EB or rgb(0,177,235); EF7D00 or rgb(239,125,0); FFBB00 or rgb(255,187,0).
-
+---
 ## 💡 Tools Used
 - Power BI (Data Modelling, Pivot Tables, Charts and Visualizations, Filters and Conditional Formatting)
 - Power Query (Data Preparation, Cleaning & Transformation)
-
 ---
-
 ## 👤 Author
 **Benedict Chima Ogbulachi**  
 LinkedIn Profile: [Benedict Ogbulachi](https://www.linkedin.com/in/benedictogbulachi)
